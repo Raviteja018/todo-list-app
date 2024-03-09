@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #31304D;
+    color: white;
+    min-height: 100vh;
+}
+
+header, form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+
+form input, form button{
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: none;
+    background-color: white;
+    outline: none;
+}
+
+form button{
+    padding: 0.6rem;
+    background-color: #2D9596;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+    background-color: white;
+    color: #2D9596;
+    transition: all 0.3s ease;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    list-style-type: none;
+    min-width: 50%;
+    max-height: 250px; /* You can adjust this value based on your layout and preferences */
+    overflow-y: scroll;
+}
+
+.todo{
+    background-color: white;
+    color: black;
+    font-size: 1.25rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo li{
+    flex: 1;
+    padding: 0 0.5rem;
+}
+
+.complete-btn,
+.delete-btn,
+.edit-btn{
+    padding: 1rem;
+    border: none;
+    background-color: #2D9596;
+    color: white;
+    cursor: pointer;
+}
+
+.fa-trash,
+.fa-check{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+select{
+    margin: 1rem;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+
+
